@@ -1025,6 +1025,22 @@
 
     <!-- Java Script
     ================================================== -->
+    <script>
+        function showDiv() {
+    // console.log(document.getElementById('welcomeDiv').style.display);
+    if(document.getElementById('welcomeDiv').style.display === "block"){
+        document.getElementById('show-div').value = "show More"
+        document.getElementById('welcomeDiv').style.display = "none";
+        
+    }
+    else{
+        document.getElementById('show-div').value = "Hide"
+        document.getElementById('welcomeDiv').style.display = "block";
+        }
+    
+
+ }
+    </script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
