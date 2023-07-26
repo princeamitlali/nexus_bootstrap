@@ -237,6 +237,26 @@
         });
 
     };
+    // var showDiv = function() {
+    //     var dis = $('#welcomeDiv').show()
+    
+    // };
+
+    $(function(){
+        $('#show-div').click(function() {
+            var dis = $('#welcomeDiv').css('display');
+            if(dis==="block"){
+                $('#welcomeDiv').hide()
+                $('#show-div').val("Show More")
+            }
+            else{
+                $('#welcomeDiv').show()
+                $('#show-div').val("Hide")
+            }
+            
+        }
+        );
+    });
 
 
    /* Initialize
@@ -271,3 +291,8 @@
     
 
 //  }
+
+var showDiv = function() {
+    var dis = $('#welcomeDiv').show()
+
+};
