@@ -256,3 +256,18 @@
     })();
 
 })(jQuery);
+
+function showDiv() {
+    // console.log(document.getElementById('welcomeDiv').style.display);
+    if(document.getElementById('welcomeDiv').style.display === "block"){
+        document.getElementById('show-div').value = "show More"
+        document.getElementById('welcomeDiv').style.display = "none";
+        
+    }
+    else{
+        document.getElementById('show-div').value = "Hide"
+        document.getElementById('welcomeDiv').style.display = "block";
+        }
+    
+
+ }
