@@ -2996,6 +2996,13 @@ html.no-csstransitions .home-content__main {
  * # works
  *
  * ------------------------------------------------------------------- */
+ iframe{
+  border: 4px solid #FFFFFF;
+  /* border-image: rgb(11,11,11); */
+  /* border-image: radial-gradient(circle, rgba(11,11,11,1) 11%, rgba(255,255,255,1) 70%); */
+ }
+
+
 .s-works {
   padding-top: 10rem;
   padding-bottom: 18rem;
@@ -3022,10 +3029,12 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
+
+
 .masonry-wrap {
   margin-top: 7.2rem;
-  max-width: 1100px;
-  position: relative;
+  max-width: 90vw;
+  /* position: relative; */
 }
 
 .masonry-wrap:after {
@@ -3040,10 +3049,10 @@ html.no-csstransitions .home-content__main {
   clear: both;
 }
 
-.masonry .grid-sizer,
+/* .masonry .grid-sizer,
 .masonry__brick {
   width: 50%;
-}
+} */
 
 .masonry__brick {
   float: left;
@@ -3217,6 +3226,13 @@ html.no-csstransitions .home-content__main {
   transform: translate3d(0, 0, 0);
 }
 
+.thumb-link{
+  height: 95vh;
+  width:90vw;
+  margin-bottom: 5vh;
+  border: 4px 4px 4px 4px rgba(248, 246, 246, 0.938);
+  border-radius: 20px;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * works
@@ -3243,7 +3259,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .masonry-wrap {
-    padding: 0 35px;
+    padding: 0 10px;
   }
 
   .masonry__brick {
@@ -3254,6 +3270,9 @@ html.no-csstransitions .home-content__main {
   .item-folio__title,
   .item-folio__cat {
     font-size: 1.4rem;
+  }
+  .thumb-link{
+    width:75vw;
   }
 
 }
@@ -3931,6 +3950,8 @@ footer a {
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
+
+
 @media only screen and (max-width:600px) {
   .ss-copyright span {
     display: block;
@@ -3952,6 +3973,8 @@ footer a {
     display: none;
   }
 
+
+
 }
 
 @media only screen and (max-width:400px) {
@@ -3966,6 +3989,8 @@ footer a {
     padding: 0 3rem;
     padding: 0 2rem;
   }
+  
+ 
 
 }
 

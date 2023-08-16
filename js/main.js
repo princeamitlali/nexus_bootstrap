@@ -126,7 +126,8 @@
         // get items
         $folioItems.each( function(i) {
 
-            var $folio = $(this),
+            var $folio = 
+            $(this),
                 $thumbLink =  $folio.find('.thumb-link'),
                 $title = $folio.find('.item-folio__title'),
                 $caption = $folio.find('.item-folio__caption'),
@@ -154,15 +155,16 @@
         $folioItems.each(function(i) {
 
             $(this).on('click', function(e) {
-                e.preventDefault();
-                var options = {
-                    index: i,
-                    showHideOpacity: true
-                }
+                window.top.location.href = items[src]; 
+                // e.preventDefault();
+                // var options = {
+                //     index: i,
+                //     showHideOpacity: true
+                // }
 
-                // initialize PhotoSwipe
-                var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
-                lightBox.init();
+                // // initialize PhotoSwipe
+                // var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+                // lightBox.init();
             });
 
         });
