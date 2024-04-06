@@ -4001,5 +4001,8 @@ button.show-div{
 
 p{
   color: white;
-  text-align: left;
+  text-align: justify;
+}
+h1.display-1 {
+  text-align: justify;
 }
